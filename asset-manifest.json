@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/myportfolio/static/css/main.f1828a4b.css",
+    "main.js": "/myportfolio/static/js/main.1de421bb.js",
+    "static/js/787.a2cb61a6.chunk.js": "/myportfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/soul-in-chamber.png": "/myportfolio/static/media/soul-in-chamber.4d9e032aba098a5d8b64.png",
+    "static/media/heehaw-ranch.JPG": "/myportfolio/static/media/heehaw-ranch.0d6719bd5df52c68d3c8.JPG",
+    "static/media/background1.jpeg": "/myportfolio/static/media/background1.99a15b641a756ac0caef.jpeg",
+    "static/media/background2.jpeg": "/myportfolio/static/media/background2.e2a03c24e8f71a0af922.jpeg",
+    "static/media/pawgers.JPG": "/myportfolio/static/media/pawgers.fdcbac78384e0378be29.JPG",
+    "static/media/streamability.JPG": "/myportfolio/static/media/streamability.c09a18af8dcd7e50f618.JPG",
+    "static/media/gun-texture.JPG": "/myportfolio/static/media/gun-texture.2c76f43cf4cce00c9e6a.JPG",
+    "static/media/chappie.JPG": "/myportfolio/static/media/chappie.a6b4e9ebb15792278211.JPG",
+    "static/media/RESUME.pdf": "/myportfolio/static/media/RESUME.e8797dc143f6e2eb4cf4.pdf",
+    "static/media/Me.svg": "/myportfolio/static/media/Me.e7fd0478451b8d72ff9b93b1ea475b66.svg",
+    "static/media/KF_logo.png": "/myportfolio/static/media/KF_logo.92a7d81679e13cacdc76.png",
+    "static/media/artstation_logo.png": "/myportfolio/static/media/artstation_logo.8c80b27c93256a3a4212.png",
+    "static/media/github_icon.png": "/myportfolio/static/media/github_icon.8a6550de428e1974c8d7.png",
+    "static/media/linkedin_logo.png": "/myportfolio/static/media/linkedin_logo.d6c105586713c70d711d.png",
+    "static/media/Me2.svg": "/myportfolio/static/media/Me2.1b03b5012aa623d8843aacbac1df6973.svg",
+    "index.html": "/myportfolio/index.html",
+    "main.f1828a4b.css.map": "/myportfolio/static/css/main.f1828a4b.css.map",
+    "main.1de421bb.js.map": "/myportfolio/static/js/main.1de421bb.js.map",
+    "787.a2cb61a6.chunk.js.map": "/myportfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f1828a4b.css",
+    "static/js/main.1de421bb.js"
+  ]
+}
