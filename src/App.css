@@ -1,38 +1,338 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+  font-family: "Roboto", sans-serif !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primary-white : #fff;
+  --secondary-color: rgb(27, 27, 27);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.kflogo {
+  width: 5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navbar */
+
+nav a.nav-link {
+  font-weight: 500;
+  letter-spacing: .4rem;
+  cursor: pointer;
+  border-radius: .5rem;
+  font-size: .4rem;
+}
+
+
+nav ul li {
+  text-transform: uppercase;
+
+}
+
+.navbar-nav > li > a {
+  color: var(--primary-white) !important;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-bottom: .2rem solid transparent;
+  padding-left: 1rem !important;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus{
+  border-bottom: .2rem solid var(gray);
+  background-color: gray;
+}
+
+
+.navbar-brand {
+  max-width: 15rem;
+  padding: 2 !important;
+  height: 6rem !important;
+}
+
+.links {
+  justify-content: end;
+}
+
+.navbar-nav > li > a:hover{
+  border-bottom: .2rem solid var(gray);
+  background-color: gray;
+}
+
+/* Header */
+
+.header-wrapper {
+  position: relative;
+  background: url(background1.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  z-index: 1;
+}
+
+.main-info h1 {
+  color: rgba(255, 255, 255, 0.918);
+}
+
+.typed-text {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.918);
+}
+
+.btn-main-offer {
+  text-decoration: none;
+  border: .1rem solid var(--primary-white);
+  text-transform: uppercase;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  color: rgba(255, 255, 255, 0.918);
+  background-color: rgb(35, 53, 63);
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  border: .1rem solid black;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  padding: 1rem;
+  color: rgba(255, 255, 255, 0.918);
+  background-color: rgb(165, 165, 165);
+  transition: .2s ease-in-out;
+}
+
+/* footer */
+.footer-logo {
+  width: 3rem;
+  margin: 2rem;
+}
+
+.footer-wrapper {
+  background-color: var(--secondary-color);
+  z-index: 100;
+}
+
+/* aboutme */
+
+.about {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+
+.about-heading {
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+  color: rgb(98, 7, 182);
+  border-bottom: 1px solid black;
+}
+
+.profile-img {
+  width: 20rem;
+  margin-top: 2rem;
+}
+
+/* portfolio */
+.portfolio-header {
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+  padding-top: 2rem;
+  border-bottom: 2px solid black;
+}
+
+.portfolio-wrapper {
+  position: relative;
+  background: url(background2.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio-image {
+  width: 15rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.portfolio-image-box {
+  position: relative;
+  margin: .5rem;
+}
+
+
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  /* border-bottom: 2px solid black; */
+}
+
+.image__overlay{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffff;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.image__overlay:hover{
+  opacity: 1;
+
+}
+
+.image__title {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif !important;
+}
+
+
+.contacts {
+  background: var(--secondary-color);
+  padding: 3rem 0;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.contacts h1 {
+  color:var(--primary-white);
+  font-size: 2rem;
+  padding: 1rem ;
+  font-size: 2vw;
+  letter-spacing: .4rem;
+}
+
+.contacts p {
+  letter-spacing: .4rem;
+  color:var(--primary-white);
+  font-size: 1vw;
+}
+
+.contacts input, .contacts textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 2px solid rgb(148, 148, 148);
+  outline: 0 !important;
+  box-shadow: none;
+  top: 0;
+  color: rgb(184, 184, 184);
+  font-family: "Roboto", sans-serif !important;
+  letter-spacing: .4rem;
+  font-size: 1vw;
+  border-radius: 0px;
+}
+
+.contacts .container {
+  padding: 4rem;
+}
+
+.contacts textarea {
+  height: 1rem;
+}
+
+.contacts input:focus, .contacts textarea:focus {
+  background: transparent;
+  color: #fff;
+}
+
+.contact-btn {
+  width: 50%;
+  margin-top: 3vw;
+  background: none;
   color: white;
+  letter-spacing: .4rem;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-btn:hover {
+  width: 50%;
+  margin-top: 3vw;
+  background: white;
+  color: black;
+  letter-spacing: .4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media(max-width: 1200px) {
+  .about-heading{
+    margin-left: 2vw;
   }
-  to {
-    transform: rotate(360deg);
+  .about-text {
+    width:  100%;
+    margin-left: 2vw;
+  }
+}
+
+@media(max-width: 912px) {
+  .profile-img {
+    width: 29rem;
+    padding-bottom: 2rem;
+    
+  }
+  .about-text {
+    width: 70vw;
+  }
+}
+
+@media(max-width: 776px) {
+  .profile-img {
+    width: 20rem;
+    padding-bottom: 2rem;
+    
+  }
+  .about-text {
+    width: 20rem;
+  }
+}
+
+@media(max-width: 520px) {
+  .profile-img {
+    width: 15rem;
+    padding-bottom: 2rem;
+  }
+  .about-text {
+
+    width: 18rem;
+    font-size: .8rem;
+  }
+}
+
+@media(max-width: 468px) {
+  .profile-img {
+    width: 15rem;
+    padding-bottom: 2rem;
+  }
+  .about-text {
+    padding-left: 10vw;
+    width: 70vw;
+    font-size: .8rem;
   }
 }
