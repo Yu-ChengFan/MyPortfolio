@@ -21,7 +21,7 @@ nav a.nav-link {
   letter-spacing: .4rem;
   cursor: pointer;
   border-radius: .5rem;
-  font-size: .4rem;
+  font-size: .6rem;
 }
 
 
@@ -29,6 +29,8 @@ nav ul li {
   text-transform: uppercase;
 
 }
+
+
 
 .navbar-nav > li > a {
   color: var(--primary-white) !important;
@@ -132,7 +134,7 @@ nav ul li {
   position: relative;
   background-size: cover;
   background-position: center;
-  height: 70vh;
+  height: auto;
 }
 
 .about-heading {
@@ -172,6 +174,7 @@ nav ul li {
 .portfolio-image-box {
   position: relative;
   margin: .5rem;
+  
 }
 
 
